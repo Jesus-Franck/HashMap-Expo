@@ -19,5 +19,9 @@ public class Contactos {
         for (String nombre : telefonos.keySet()) {
             System.out.println(nombre + " -> " + telefonos.get(nombre));
         }
+
+
+        System.out.println("HashMap Datos");
     }
 }
+    

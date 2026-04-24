@@ -1,64 +1,67 @@
-# 📚 Taller Práctico: Estructuras de Datos - HashMap
+# 📚 Hub de Estructuras de Datos: Java Collections
 
-Este repositorio contiene el material de apoyo y los ejercicios prácticos diseñados para la exposición sobre la clase **`HashMap`** en Java. El objetivo de esta sesión es que los estudiantes comprendan el funcionamiento de las tablas de hash y practiquen la implementación de lógica basada en pares clave-valor (Key-Value).
+Este repositorio centraliza el material de apoyo, ejercicios prácticos y soluciones desarrolladas durante las sesiones de exposición y la realización del **Parcial II**. Aquí encontrarás una guía completa sobre cómo gestionar datos de forma eficiente en Java.
 
 ---
 
-## 🧠 ¿Qué aprenderemos?
+## 🚀 Contenido Principal: HashMap
 
-Un **HashMap** es una estructura que almacena información en pares de **clave-valor**, similar a un diccionario. Su principal ventaja es la **búsqueda ultra rápida**, ya que accede a los datos de forma casi instantánea sin necesidad de recorrer toda la lista.
+El núcleo de nuestra exposición se centra en la clase **`HashMap`**, diseñada para que los estudiantes comprendan el funcionamiento de las tablas de hash y la lógica de pares **clave-valor** (Key-Value).
+
+### 🧠 ¿Qué es un HashMap?
+
+Es una estructura que funciona como un diccionario, permitiendo una **búsqueda ultra rápida** mediante el acceso directo a los datos sin necesidad de recorrer toda la colección.
 
 ### ⚙️ Funcionamiento Interno
 
-La velocidad del HashMap se basa en la **Función Hash**:
+La magia ocurre a través de la **Función Hash**:
 
 1. **Entrada:** Recibe una clave única.
-2. **Procesamiento:** Aplica el método `hashCode()` para convertir la clave en un número entero.
-3. **Ubicación:** Ese número determina el índice exacto en un arreglo interno para guardar el valor.
+2. **Procesamiento:** Usa el método `hashCode()` para convertir la clave en un índice entero.
+3. **Ubicación:** Determina la posición exacta en la memoria para guardar el valor asociado.
 
 ### ⚠️ Reglas de Oro (Características)
 
-* **Claves Únicas:** No se pueden repetir; si se usa una clave existente, el valor se sobrescribe.
-* **Valores Duplicados:** Los valores sí pueden repetirse.
+* **Claves Únicas:** No se permiten duplicados; si se repite una clave, el valor se sobrescribe.
+* **Valores Duplicados:** Los valores pueden repetirse sin problema.
 * **Gestión de Nulls:** Permite una clave `null` y múltiples valores `null`.
-* **Sin Orden:** No garantiza que los elementos mantengan el orden de inserción.
-* **No Sincronizado:** No es seguro para hilos (multithreading) por defecto.
+* **Sin Orden:** No garantiza mantener el orden de inserción (para orden automático, ver sección de **TreeMap**).
+* **No Sincronizado:** No es seguro para entornos multihilo sin configuración adicional.
 
 ---
 
-## 👥 Autores
+## 🛠️ Otras Estructuras Incluidas
+
+Debido a la colaboración del grupo y el contenido del **Parcial II**, este repositorio también incluye ejemplos de:
+
+* **ArrayList:** Gestión dinámica de listas de objetos (ej. Estudiantes).
+* **TreeMap:** Mapas que mantienen las claves ordenadas automáticamente.
+* **ArrayDeque:** Implementación de colas (Queues) y deques para simulación de filas (atención al cliente).
+* **LinkedList:** Listas doblemente enlazadas ideales para inserciones constantes en los extremos.
+
+---
+
+## 👥 Equipo de Trabajo
+
+### **Exposición (Estructuras de Datos)**
 
 * **Jesus David Franco Guerra**
 * **William Camilo Blanco Nerio**
 * **Brayan Camilo Mosquera Hernández**
 * **Yorbis David Fernandez Blanco**
 
+### **Desarrollo del Parcial II**
+
+* **Jesus David Franco Guerra**
+* **Brayan Camilo Mosquera Hernández**
+
 ---
 
-### 🛠️ Tecnologías y Herramientas
+### 💻 Tecnologías y Herramientas
 
 * **Lenguaje:** Java 17 o superior.
-* **Gestor de Dependencias:** Maven.
-* **Compatibilidad:** Totalmente compatible con IntelliJ IDEA, VS Code y NetBeans.
+* **Entorno:** Compatible con IntelliJ IDEA, VS Code, NetBeans y Eclipse.
 
 ---
 
-## 🏗️ Niveles del Taller
-
-El taller está organizado para escalar en complejidad:
-
-1. **Operaciones Básicas:** Inserción (`put`) y búsqueda (`get`) de datos.
-2. **Iteración:** Recorrido de mapas mediante `keySet` y `entrySet`.
-3. **Lógica Personalizada:** Uso de objetos como llaves y manejo de casos donde la llave no existe.
-
----
-
-## 📂 Estructura del Proyecto
-
-Para facilitar la navegación por los ejercicios de la exposición, el proyecto está organizado de la siguiente manera:
-
-```text
-/src
-├── 📂 ArrayList/          (Comparativa vs HashMap)
-├── 📂 Ejercisios/         (Casos de Estudio: Implementación de Lógica Indexada)
-└── 📂 TDS-Collab/         (Espacio para aportes de otros grupos)
+Este repositorio es una herramienta de estudio viva. ¡Úsala para dominar las colecciones en Java!

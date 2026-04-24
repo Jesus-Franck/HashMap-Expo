@@ -33,5 +33,7 @@ public class Contactos {
         for (Contacto c : telefonos) {
             System.out.println(c.nombre + " -> " + c.telefono);
         }
+
+        System.out.println("Datos ArrayList ");
     }
 }
